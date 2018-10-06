@@ -1,13 +1,9 @@
-from flask import Flask, request
-from flask_restful import Api
+from myproject import app
+from flask import render_template
 
-
-app = Flask(__name__)
-api = Api(app)
-
-
-# api.add_resource()
-
+app.route('/')
+def index():
+    return render_template('home.html')
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
