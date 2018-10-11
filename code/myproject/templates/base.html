@@ -1,1 +1,53 @@
 <!-- This will hold the nav and footer -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Matthew Metros</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/base.css') }}">
+    <!-- Raleway: 400, 600 | Roboto: 400 -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600|Roboto" rel="stylesheet">
+    <!-- FontAwesome Logos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Top Container -->
+    <div id="top-container">
+      <!-- nav -->
+      <div id="nav">
+          <!-- logo -->
+          <a id="logo" href="{{ url_for('index') }}">Matthew Metros</a>
+      </div>
+        <div id="greeting">
+          <h1>{{ heading }}</h1>
+        </div>
+    </div>
+    <!-- Subnav -->
+      <ul id="sub-nav">
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/resume">Resume</a></li>
+      </ul>
+
+    {% block content %}
+
+    {% endblock %}
+    <div id="footer">
+      <ul id="footer-top">
+        <li><a href="https://github.com/mmetros"  target=”_blank”><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/matthew-metros-41a6a4123/"  target=”_blank”><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="mailto:matthew.metros@gmail.com"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/matthew-metros-41a6a4123/"  target=”_blank”><i class="fas fa-folder-open"></i></a></li>
+      </ul>
+      <ul id="footer-middle">
+        <li><i class="fas fa-space-shuttle"></i></li>
+        <li>Designed With <i class="fas fa-heart"></i> From Matt</li>
+      </ul>
+      <ul id=footer-bottom>
+        <li> &copy 2018. All rights reserved.</li>
+      </ul>
+    </div>
+
+  </body>
+</html>

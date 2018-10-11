@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#top-container{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  font-family: Raleway;
+}
+
+#nav{
+  height: 42px;
+  padding: 10px 15px 15px 10px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+#logo{
+  padding: 12px 20px 12px;
+  font-size: 22px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: white;
+}
+
+#greeting{
+  padding: 160px 0px 100px;
+  width: 100%;
+  text-align: center;
+}
+
+#greeting h1 {
+  font-size: 42px;
+  color: white;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+
+#sub-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0px;
+}
+
+#sub-nav li {
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#sub-nav li a{
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Roboto;
+  padding:20px 0px;
+}
+
+#footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e9eaec;
+}
+
+#footer-top,
+#footer-middle,
+#footer-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#footer-top li,
+#footer-middle li,
+#footer-bottom li {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+#footer-top li a{
+  border: 3px solid black;
+  display: block;
+}
+
+#footer-middle li{
+  margin-right: 5px;
+  font-size: 14px;
+}
+.fa-github,
+.fa-linkedin-in,
+.fa-envelope,
+.fa-folder-open{
+  font-size: 40px;
+  margin-right: 12px;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#footer-middle{
+  margin-top: 20px;
+}
+
+.fa-heart {
+  color:red;
+  animation: fa-heart 5s ease infinite;
+}
+@keyframes fa-heart {
+  0% {
+    transform:scale(1);
+  }
+  5% {
+    transform:scale(1.25);
+  }
+  20% {
+    transform:scale(1);
+  }
+  30% {
+    transform:scale(1);
+  }
+  35% {
+    transform:scale(1.25);
+  }
+  50% {
+    transform:scale(1);
+  }
+  55% {
+    transform:scale(1.25);
+  }
+  70% {
+    transform:scale(1);
+  }
+}
